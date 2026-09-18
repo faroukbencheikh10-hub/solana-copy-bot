@@ -1,0 +1,20 @@
+{
+  "name": "solana-copy-bot",
+  "version": "1.0.0",
+  "description": "Bot che copia automaticamente i trade (buy + sell) di un wallet Solana bersaglio",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.95.3",
+    "@solana/spl-token": "^0.4.9",
+    "bs58": "^6.0.0",
+    "dotenv": "^16.4.5",
+    "node-fetch": "^3.3.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
