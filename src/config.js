@@ -26,6 +26,10 @@ export const config = {
   // Uno dei due e' obbligatorio, controllato in wallet.js (non qui, per permettere entrambi)
   myPrivateKey: process.env.MY_WALLET_PRIVATE_KEY ?? '',
   myMnemonic: process.env.MY_WALLET_MNEMONIC ?? '',
+  // Indirizzo pubblico del conto da usare. Serve quando la frase di recupero
+  // contiene piu' conti: il bot cerca quello giusto invece di prendere il primo.
+  // E' un dato pubblico, non e' un segreto.
+  myAddress: process.env.MY_WALLET_ADDRESS ?? '',
   totalBudgetSol: parseFloat(process.env.TOTAL_BUDGET_SOL ?? '0.5'),
   // Percentuale del saldo disponibile usata quando il bot compra. Con piu' wallet
   // seguiti insieme, il bot copia UN trade alla volta (il primo segnale che arriva,
